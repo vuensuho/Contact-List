@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <link rel="shortcut icon" href="/images/contacts.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/contact-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="contact-title">Contact Details</h1>
+        <div class="form-container">
+            <form action="#" class="form-control" id="form-control">
+                <label for="firstname">Firstname: </label>
+                <input type="text" id="firstname" class="firstname" name="firstname" autocomplete="off" required>
+
+                <label for="lastname">Lastname: </label>
+                <input type="text" id="lastname" class="lastname" name="lastname" autocomplete="off" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" class="email" name="email" autocomplete="off" required>
+
+                <label for="phone-number">Phone Number: </label>
+                <input type="number" id="phone-number" class="phone-number" name="phone-number" autocomplete="off" required>
+
+                <input type="submit" id="submit" class="submit-btn" value="Add contact">
+            </form>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Edit/Delete</th>
+                </tr>  
+            </tbody>
+        </table>
+    </div>
+    <div class="popup-container">
+        <form action="#" class="popup-box">
+            <div class="form-control">
+                <label for="edit-firstname">Firstname:</label>
+                <input type="text" id="edit-firstname" class="edit-firstname" name="edit-firstname" autocomplete="off" required>
+            </div>
+            <div class="form-control">
+                <label for="edit-lastname">Lastname: </label>
+                <input type="text" id="edit-lastname" class="edit-lastname" name="edit-lastname" autocomplete="off" required>
+            </div>
+            <div class="form-control">
+                <label for="edit-email">Email: </label>
+                <input type="email" id="edit-email" class="edit-email" name="edit-email" autocomplete="off" required>
+            </div>
+            <div class="form-control">
+                <label for="edit-phone-number">Phone Number: </label>
+                <input type="number" id="edit-phone-number" class="edit-phone-number" name="edit-phone-number" autocomplete="off" required>
+            </div>
+            <div class="buttons">
+                <button class="save-btn">Save changes</button>
+                <button class="close-btn">Close</button>
+            </div>
+        </form>
+    </div>
+    <div class="delete-popup-container">
+        <div class="delete-popup-box">
+            <h3>Are you sure you want to delete?</h3>
+            <div class="delete-option-buttons">
+                <button class="yes-btn">Yes</button>
+                <button class="no-btn">No</button>
+            </div>
+        </div>
+    </div>
+    <div class="fillup-prompt-container">
+        <div class="fillup-prompt-box">
+            <h3>Please complete all required fields</h3>
+            <div class="fillup-prompt-button">
+                <button class="ok-btn">Okay</button> 
+            </div>
+        </div>
+    </div>
+    <div class="email-prompt-container">
+        <div class="email-prompt-box">
+            <h3>Invalid email</h3>
+            <div class="email-prompt-button">
+                <button class="email-ok-btn">Okay</button> 
+            </div>
+        </div>
+    </div>
+    <div class="phonenumber-prompt-container">
+        <div class="phonenumber-prompt-box">
+            <h3>Invalid phone number</h3>
+            <div class="phonenumber-prompt-button">
+                <button class="phonenumber-ok-btn">Okay</button>
+            </div>
+        </div>
+    </div>
+<script src="/js/contact-list.js"></script>
+</body>
+</html>
